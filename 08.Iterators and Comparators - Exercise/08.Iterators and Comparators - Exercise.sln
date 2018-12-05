@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Comparing_Objects", "P0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Strategy_Pattern", "P06_Strategy_Pattern\P06_Strategy_Pattern.csproj", "{FFD5C421-D976-48CE-94D6-862293C5228C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07_Equality_Logic", "P07_Equality_Logic\P07_Equality_Logic.csproj", "{4D2FB191-C6D5-4D47-9268-2C53ED78CCBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09_Linked_List_Traversal", "P09_Linked _List_Traversal\P09_Linked_List_Traversal.csproj", "{28A52A8F-C003-4350-87A4-E2DCD390609C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{FFD5C421-D976-48CE-94D6-862293C5228C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD5C421-D976-48CE-94D6-862293C5228C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD5C421-D976-48CE-94D6-862293C5228C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2FB191-C6D5-4D47-9268-2C53ED78CCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2FB191-C6D5-4D47-9268-2C53ED78CCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2FB191-C6D5-4D47-9268-2C53ED78CCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2FB191-C6D5-4D47-9268-2C53ED78CCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A52A8F-C003-4350-87A4-E2DCD390609C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A52A8F-C003-4350-87A4-E2DCD390609C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A52A8F-C003-4350-87A4-E2DCD390609C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A52A8F-C003-4350-87A4-E2DCD390609C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
