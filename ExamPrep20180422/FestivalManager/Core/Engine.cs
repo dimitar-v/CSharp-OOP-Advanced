@@ -15,7 +15,6 @@
 
         private IFestivalController festivalCоntroller;
         private ISetController setCоntroller;
-        private ISetController setController;
 
         public Engine(IReader reader, IWriter writer, IFestivalController festivalCоntroller, ISetController setCоntroller)
         {
@@ -44,6 +43,10 @@
 
                     result = this.CommandController(input);
                 }
+                catch (TargetInvocationException ex)
+                {
+                    result = $"ERROR: {ex.InnerException.Message}";
+                }
                 catch (Exception ex)
                 {
                     result = $"ERROR: {ex.Message}";
@@ -52,10 +55,10 @@
                 writer.WriteLine(result);
             }
 
-            writer.WriteLine("Results:" + Environment.NewLine + festivalCоntroller.ProduceReport());
+            writer.WriteLine(festivalCоntroller.ProduceReport());
         }
 
-        public string CommandController(string input)
+        private string CommandController(string input)
         {
             string[] args = input.Split();
 
@@ -64,7 +67,7 @@
 
             if (command == "LetsRock")
             {
-                return setController.PerformSets();
+                return setCоntroller.PerformSets();
             }
 
             MethodInfo festivalcontrolfunction = festivalCоntroller.GetType()

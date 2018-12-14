@@ -17,11 +17,11 @@
             this.performers = new List<IPerformer>();
         }
 
-        IReadOnlyCollection<ISet> IStage.Sets => sets.AsReadOnly();
+        public IReadOnlyCollection<ISet> Sets => sets.AsReadOnly();
 
-        IReadOnlyCollection<ISong> IStage.Songs => songs.AsReadOnly();
+        public IReadOnlyCollection<ISong> Songs => songs.AsReadOnly();
 
-        IReadOnlyCollection<IPerformer> IStage.Performers => performers.AsReadOnly();
+        public IReadOnlyCollection<IPerformer> Performers => performers.AsReadOnly();
 
         public void AddPerformer(IPerformer performer)
             => performers.Add(performer);

@@ -6,7 +6,12 @@ namespace Sandbox
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(string.Compare("festivalController", "festivalCоntroller"));
+            TimeSpan time = new TimeSpan(0,1,5);
+
+            int minutes = time.Hours * 60 + time.Minutes;
+            int seconds = time.Seconds;
+
+            Console.WriteLine($"{minutes:d2}:{seconds:d2}");
         }
     }
 }

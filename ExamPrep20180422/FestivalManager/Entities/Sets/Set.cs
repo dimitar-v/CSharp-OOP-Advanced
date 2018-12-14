@@ -7,12 +7,12 @@
 
 	using Contracts;
 
-	public abstract class Sets : ISet
+	public abstract class Set : ISet
 	{
 		private readonly List<IPerformer> performers;
 		private readonly List<ISong> songs;
 
-		protected Sets(string name, TimeSpan maxDuration)
+		protected Set(string name, TimeSpan maxDuration)
 		{
 			this.Name = name;
 			this.MaxDuration = maxDuration;
