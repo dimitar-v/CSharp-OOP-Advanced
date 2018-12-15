@@ -2,10 +2,10 @@
 {
 	public class Jewelery : Item
 	{
-        private const int Value = 300;
+        private const int JeweleryValue = 300;
 
         public Jewelery()
-			: base(Value)
+			: base(JeweleryValue)
 		{
 		}
 	}

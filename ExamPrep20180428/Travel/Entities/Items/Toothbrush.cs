@@ -2,10 +2,10 @@
 {
 	public class Toothbrush : Item
 	{
-        private const int Value = 3;
+        private const int ToothbrushValue = 3;
 
         public Toothbrush()
-			: base(Value)
+			: base(ToothbrushValue)
 		{
 		}
 	}

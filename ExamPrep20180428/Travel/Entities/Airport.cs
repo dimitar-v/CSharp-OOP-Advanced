@@ -6,10 +6,10 @@
 
     public class Airport : IAirport
     {
-        private List<IBag> checkedInBags;
-        private List<IBag> confiscatedBags;
-        private List<ITrip> trips;
-        private List<IPassenger> passengers;
+        private readonly List<IBag> checkedInBags;
+        private readonly List<IBag> confiscatedBags;
+        private readonly List<ITrip> trips;
+        private readonly List<IPassenger> passengers;
 
         public Airport()
         {

@@ -60,7 +60,7 @@
 
 			IItem[] items = bagItems.Select(i => itemFactory.CreateItem(i)).ToArray();
             IBag bag = new Bag(passenger, items);
-
+             
 			passenger.Bags.Add(bag);
 
 			return $"Registered bag with {string.Join(", ", bagItems)} for {username}";

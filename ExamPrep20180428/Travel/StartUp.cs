@@ -5,8 +5,7 @@
     using Core.IO;
     using Core.IO.Contracts;
     using Entities;
-
-    
+        
     public static class StartUp
     {
         public static void Main(string[] args)

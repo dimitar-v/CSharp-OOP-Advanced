@@ -2,10 +2,10 @@
 {
 	public class TravelKit : Item
 	{
-        private const int Value = 30;
+        private const int TravelKitValue = 30;
 
         public TravelKit()
-			: base(Value)
+			: base(TravelKitValue)
 		{
 		}
 	}

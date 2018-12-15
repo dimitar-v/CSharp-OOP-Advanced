@@ -28,9 +28,6 @@
 
 		public void Complete() => this.IsCompleted = true;
 
-		private static string GenerateId(string departure, string destination)
-		{
-			return $"{departure}{destination}{id++}";
-		}
+		private static string GenerateId(string departure, string destination) => $"{departure}{destination}{id++}";
 	}
 }

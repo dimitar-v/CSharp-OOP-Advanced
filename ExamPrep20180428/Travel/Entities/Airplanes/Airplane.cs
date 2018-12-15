@@ -11,7 +11,7 @@
         private List<IBag> bags;
         private List<IPassenger> passangers;
 
-        public Airplane(int seats, int baggageCompartments)
+        protected Airplane(int seats, int baggageCompartments)
         {
             this.Seats = seats;
             this.BaggageCompartments = baggageCompartments;

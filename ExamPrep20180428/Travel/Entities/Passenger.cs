@@ -14,7 +14,6 @@
 
 		public string Username { get; }
 
-        // TODO: Check set?
 		public IList<IBag> Bags { get; }
 	}
 }

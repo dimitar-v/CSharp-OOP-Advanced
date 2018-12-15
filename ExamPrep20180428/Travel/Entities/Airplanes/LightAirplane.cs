@@ -2,11 +2,11 @@
 {
 	public class LightAirplane : Airplane
 	{
-        private const int Seats = 5;
-        private const int BaggageCompartments = 8;
+        private const int LightAirplaneSeats = 5;
+        private const int LightAirplaneBaggageCompartments = 8;
 
 		public LightAirplane()
-			: base(Seats, BaggageCompartments)
+			: base(LightAirplaneSeats, LightAirplaneBaggageCompartments)
 		{
 		}
 	}

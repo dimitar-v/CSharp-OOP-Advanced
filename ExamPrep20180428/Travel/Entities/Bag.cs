@@ -3,6 +3,7 @@
     using Contracts;
     using Items.Contracts;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class Bag : IBag
     {
@@ -11,7 +12,7 @@
         public Bag(IPassenger owner, IEnumerable<IItem> items)
         {
             this.Owner = owner;
-            this.items = new List<IItem>(items);
+            this.items = items.ToList();
         }
 
         public IPassenger Owner { get; }
